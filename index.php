@@ -51,7 +51,7 @@ class user {
     protected $carrello=[];
 
 
-    public function __construc($nome,$cognome,$indirizzo,$telefono,$email,$fattura){
+    public function __construct($nome,$cognome,$indirizzo,$telefono,$email,$fattura){
   
     $this ->nome =$nome;
     $this ->cognome =$cognome;
@@ -81,7 +81,7 @@ class user {
   
     protected $cv;
 
-    public function __construc($nomeAzienda,$nomeUser,$scadenza,$cv){
+    public function __construct($nomeAzienda,$nomeUser,$scadenza,$cv){
     
       $this ->nomeAzienda =$nomeAzienda;
       $this ->nomeUser =$nomeUser;
@@ -101,7 +101,7 @@ class user {
 //   echo $chitarra -> recensione;
 
   //parte di aquisto utente
-  $shopUser = new user('mario','rossi','via Colombo','340*****03','marioògmail.com','fat-12455-658/3');
+  $shopUser = new user('mario','rossi','via Colombo','340*****03','marioògmail.com','fat-12455-658/3-tutto-sempbre!');
 
   $shopUser -> addShops($chitarra);
 
