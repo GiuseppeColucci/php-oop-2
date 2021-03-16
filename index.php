@@ -1,11 +1,5 @@
 <?php
 
-class shop{
-    private $datiUser;
-
-    private $product;
-
-}
 
 class prodotti{
     private $nome;
@@ -30,19 +24,47 @@ class prodotti{
 
 }
 
-class articolo extends  prodotti {
 
-}
 
 $chitarra = new prodotti ( 'fender', 'img', 'é un chitarra famosa usata da personaggi famosi', ' euro 2000', ' voto 5') ;
 
-//parte utente
 
 echo $chitarra -> nome;
 echo $chitarra -> img;
 echo $chitarra -> descrizioneProdotto;
 echo $chitarra -> prezzo;
 echo $chitarra -> recensione;
+//parte utente
 
+class user {
+
+    protected $nome;
+  
+    protected $cognome;
+  
+    protected $indirizzo;
+  
+    protected $telefono;
+
+    protected $email;
+
+    protected $fattura;
+
+    public function __construc($nome,$cognome,$indirizzo,$telefono,$email,$fattura){
+  
+    $this ->nome =$nome;
+    $this ->cognome =$cognome;
+    $this ->indirizzoFatturazione =$indirizzo;
+    $this ->telefono =$telefono;
+    $this ->email =$email;
+    $this ->fattura =$fattura;
+
+    }
+  
+  }
+
+  class creditcard{
+      
+  }
 
 ?>
